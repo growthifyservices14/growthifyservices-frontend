@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #9333ea;
+  --primary-dark: #7e22ce;
+  --primary-light: #a855f7;
+
+  --background: #ffffff;
+  --heading: #111111;
+  --body: #333333;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --light-bg: #f9fafb;
+}
+
+/* Selection */
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 10px 20px rgba(147, 51, 234, 0.3);
+}
+
+/* Hero Pattern */
+.hero-pattern {
+  background-image:
+    radial-gradient(
+      circle at 25px 25px,
+      rgba(147, 51, 234, 0.03) 2px,
+      transparent 0
+    ),
+    radial-gradient(
+      circle at 75px 75px,
+      rgba(147, 51, 234, 0.03) 2px,
+      transparent 0
+    );
+}
