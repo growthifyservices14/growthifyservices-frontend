@@ -131,7 +131,7 @@ export interface BlogPost {
 
 export const blogAPI = {
   // Get all blog posts
-  getAll: async (): Promise<BlogPost[]> => {
+  getAll: async (): Promise<PaginatedResponse<BlogPost>> => {
     const response = await fetch(`${API_BASE_URL}/blog/`);
     if (!response.ok) throw new Error("Failed to fetch blog posts");
     return response.json();

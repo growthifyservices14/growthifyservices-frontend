@@ -249,7 +249,7 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Google Rating Card with Link */}
             <Link
-              href="https://share.google.com/ytbZDfvsGiogHKb9l"
+              href="https://share.google/ytbZDfvsGiogHKb9l"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl hover:border-[#6D28D9] transition-all cursor-pointer group"

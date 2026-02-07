@@ -129,6 +129,7 @@ const categorySlugToDisplay: Record<string, string> = {
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [apiPosts, setApiPosts] = useState<BlogPost[]>([]);
+
   const [featuredPost, setFeaturedPost] = useState<BlogPost | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -143,8 +144,12 @@ export default function BlogPage() {
         setError(null);
 
         // Fetch all posts
-        const allPosts = await blogAPI.getAll();
-        setApiPosts(allPosts);
+        const response = await blogAPI.getAll();
+
+        // 🔥 ONLY THIS LINE IS IMPORTANT
+        setApiPosts(response.results);
+
+        console.log("Fetched posts from API:", allPosts);
 
         // Fetch featured post
         const featured = await blogAPI.getFeatured();
@@ -165,7 +170,7 @@ export default function BlogPage() {
 
   // Combine API posts with hardcoded posts - FIX: Ensure apiPosts is always an array
   const allPosts = [
-    ...(Array.isArray(apiPosts) ? apiPosts : []),
+    ...apiPosts,
     ...hardcodedPosts.map((post, index) => ({
       id: -(index + 1), // Negative IDs for hardcoded posts
       title: post.title,

@@ -44,7 +44,11 @@ const socials = [
     href: "https://www.linkedin.com/company/growthifyservices/",
   },
   { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "YouTube", icon: Youtube, href: "#" },
+  {
+    name: "YouTube",
+    icon: Youtube,
+    href: "https://www.youtube.com/channel/UCibITwy4K88RxwzdMDRhmRQ",
+  },
   {
     name: "Instagram",
     icon: Instagram,
@@ -421,13 +425,13 @@ export default function Footer() {
             {/* Right */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
               <Link
-                href="/privacy"
+                href="https://www.growthifyservices.in/"
                 className="text-[#6B7280] hover:text-[#6D28D9] text-xs sm:text-sm transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href="https://www.growthifyservices.in/"
                 className="text-[#6B7280] hover:text-[#6D28D9] text-xs sm:text-sm transition-colors"
               >
                 Terms of Service

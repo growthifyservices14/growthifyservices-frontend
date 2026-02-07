@@ -531,7 +531,7 @@ export default function ContactPage() {
                   </h3>
                   <div className="flex gap-4">
                     <a
-                      href="#"
+                      href="https://www.youtube.com/channel/UCibITwy4K88RxwzdMDRhmRQ"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-gray-100 hover:bg-[#6D28D9] hover:text-white rounded-lg flex items-center justify-center transition-all"
@@ -729,10 +729,11 @@ export default function ContactPage() {
                         <button
                           type="submit"
                           disabled={isLoading}
-                          className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#6D28D9] to-[#8B5CF6] text-white px-10 py-5 rounded-xl font-semibold text-xl hover:shadow-xl hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                          className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#6D28D9] to-[#8B5CF6] text-white px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl font-semibold 
+text-sm sm:text-base md:text-xl hover:shadow-xl hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                         >
                           {isLoading ? "Sending..." : "Send Message"}
-                          <Send className="w-6 h-6" />
+                          <Send className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                         </button>
                       </div>
                     </form>

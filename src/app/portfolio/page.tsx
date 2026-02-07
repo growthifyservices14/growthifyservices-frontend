@@ -171,21 +171,28 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 mt-20">
-        <div className="bg-[#F3F4F6] rounded-3xl p-12 md:p-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">
+      {/* CTA */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 mt-12 sm:mt-20">
+        <div className="bg-[#F3F4F6] rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-16 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#111111] mb-4 sm:mb-6">
             Want Your Project Featured Here?
           </h2>
-          <p className="text-[#6B7280] text-lg mb-10 max-w-2xl mx-auto">
+
+          <p className="text-[#6B7280] text-sm sm:text-base md:text-lg mb-6 sm:mb-10 max-w-xl mx-auto">
             Let&apos;s create something amazing together. Share your idea and
             we&apos;ll bring it to life.
           </p>
+
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#6D28D9] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#5B21B6] transition-all"
+            className="inline-flex items-center gap-2 bg-[#6D28D9] text-white 
+                 px-5 py-3 sm:px-8 sm:py-4 
+                 rounded-md sm:rounded-lg 
+                 font-semibold text-sm sm:text-lg 
+                 hover:bg-[#5B21B6] transition-all"
           >
             Start Your Project
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </Link>
         </div>
       </section>
